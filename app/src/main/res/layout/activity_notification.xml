@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".Notification">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#DC143C"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+
+            android:background="#DC143C"
+            android:id="@+id/btnimgsystem"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_setting" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130sp"
+            android:layout_marginTop="8dp"
+            android:text="Thông báo"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_search" />
+
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FDF5E6"
+        app:tabSelectedTextColor="@color/colorAccent" />
+
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="520dp">
+
+            <ListView
+                android:id="@+id/list_foods"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:divider="#000"
+                android:dividerHeight="0.3dp">
+
+            </ListView>
+        </androidx.viewpager.widget.ViewPager>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+
+        android:background="#FDF5E6"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/tab_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFDAB9"
+            android:drawableTop="@drawable/ic_home"
+            android:paddingTop="10dp" />
+
+        <Button
+            android:id="@+id/tab_notification"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFDAB9"
+            android:drawableTop="@drawable/ic_save"
+            android:paddingTop="10dp" />
+
+        <Button
+            android:id="@+id/tab_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFDAB9"
+            android:drawableTop="@drawable/ic_list"
+            android:paddingTop="10dp" />
+
+        <Button
+            android:id="@+id/tab_music"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFDAB9"
+            android:drawableTop="@drawable/ic_notifications"
+            android:paddingTop="10dp" />
+
+        <Button
+            android:id="@+id/tab_foods"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFDAB9"
+            android:drawableTop="@drawable/ic_person"
+            android:paddingTop="10dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

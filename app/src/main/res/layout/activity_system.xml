@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".System"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#DC143C"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:background="#DC143C"
+            android:id="@+id/btnimgback"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_before" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80sp"
+            android:layout_marginTop="10dp"
+            android:text="Cài đặt thông báo"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:text="Xong"/>
+
+    </LinearLayout>
+    <TextView
+        android:background="@drawable/vien"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:textSize="17sp"
+        android:text="NHẬN THÔNG BÁO" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@drawable/vien"
+        >
+
+        <ImageView
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_notifications" />
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:layout_marginTop="8dp"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:text="Cho phép nhận thông báo"/>
+
+        <Switch
+
+            android:layout_marginTop="8dp"
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:textSize="15sp"
+        android:text="Cài đặt người dùng" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@drawable/vien"
+        >
+
+        <ImageView
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_users" />
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="Xã hội"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_next"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@drawable/vien"
+        >
+
+        <ImageView
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_room" />
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="Địa điểm đang theo dõi"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_next"/>
+    </LinearLayout>
+    <TextView
+        android:background="@drawable/vien"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:textSize="15sp"
+        android:text="Cài đặt thiết bị" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        >
+
+        <ImageView
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_flag" />
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="Theo địa lý"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_next"/>
+    </LinearLayout>
+    <TextView
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textSize="15sp"
+        android:text="Cài đặt mặc định" />
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="255dp"
+        android:background="#FDF5E6"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/tab_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFDAB9"
+            android:drawableTop="@drawable/ic_home"
+            android:paddingTop="10dp" />
+
+        <Button
+            android:id="@+id/tab_save"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFDAB9"
+            android:drawableTop="@drawable/ic_save"
+            android:paddingTop="10dp" />
+
+        <Button
+            android:id="@+id/tab_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFDAB9"
+            android:drawableTop="@drawable/ic_list"
+            android:paddingTop="10dp" />
+
+        <Button
+            android:id="@+id/tab_notification"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFDAB9"
+            android:drawableTop="@drawable/ic_notifications"
+            android:paddingTop="10dp" />
+
+        <Button
+            android:id="@+id/tab_person"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFDAB9"
+            android:drawableTop="@drawable/ic_person"
+            android:paddingTop="10dp" />
+    </LinearLayout>
+
+</LinearLayout>
